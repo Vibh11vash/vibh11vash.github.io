@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+  <script link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="myjs.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="fetch()">
+<nav class="navbar navbar-expand-lg nav_style p-3">
+  <a class="navbar-brand pl-5" href="#" >Covid-19</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto pr-5 text-capitalize">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutid">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sympid">Symptoms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#preventionid">Prevention</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contactid">contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    </form>
+  </div>
+</nav>
+<div class="main_header">
+	<div class="row w-100 h-100">
+		<div class="col-lg-5 col-md-5 col-12 order-lg-1 order-2">
+			<div class="leftside w-100 h-100 d-flex justify-content-center align-items-center">
+				<img src="images/cp.png" height="200" width="200">
+			</div>
+		</div>
+
+		<div class="col-lg-7 col-md-7 col-12 order-lg-2 order-1">
+			<div class="rightside w-100 h-100 d-flex justify-content-center align-items-center">
+				<h1>Let's Stay Safe And Fight Together Against Cor<span class="corona_rot"><img src="images/coronavirus.png" height="100" width="100"></span>na Virus</h1>
+			</div>
+		</div>
+	</div>
+</div>
+		<section class="corona_update sub_section">
+			<div class="mb-3">
+				<h3 class="text-uppercase text-center">covid-19 update(Global)</h3>
+			</div>
+			<div class="d-flex justify-content-around align-items-center count_style">
+				<div>
+					<h1  class="count" id="total"></h1>
+					<p >Total Cases</p>
+				</div>
+				<div>
+					<h1 class="count" id="recover"></h1>
+					<p>Total Recovered</p>
+				</div>
+				<div>
+					<h1 class="count" id="death"></h1>
+					<p>Total Death</p>
+				</div>
+				
+			</div>
+		</section>
+
+		<section class="corona_update">
+			<div class="mb-3">
+				<h3 class="text-uppercase text-center">covid-19 update(India)</h3>
+			</div>
+			<div class="d-flex justify-content-around align-items-center count_style">
+				<div>
+					<h1  class="count" id="intotal"></h1>
+					<p >Total Cases</p>
+				</div>
+				<div>
+					<h1 class="count" id="inrecover"></h1>
+					<p>Total Recovered</p>
+				</div>
+				<div>
+					<h1 class="count" id="indeath"></h1>
+					<p>Total Death</p>
+				</div>
+				
+			</div>
+		</section>
+
+
+<!------------about section---------------->
+
+
+<div class="container-fluid sub_section pt-5 pb-5" id="aboutid">
+	<div class="section_header text-center mb-5 mt-4">
+		<h1>About COVID-19</h1>	
+	</div>
+	<div class="row pt-5 ">
+		<div class="col-lg-5 col-md-6 col-12 ml-5 about_res">
+			<img src="images/corona.jpg" class="image-fluid">
+		</div>
+		<div class="col-lg-6 col-md-6 col-12">
+			<h2>What is COVID-19(Corona Virus)</h2>
+			<p>COVID-19, otherwise known as coronavirus disease 2019, is a new illness caused by a previously unknown virus called SARS-CoV-2. The virus is part of a family of coronaviruses which are responsible for lots of different illness from the common cold to the flu. But this new strain can be more severe in some populations.</p>
+			<p>The virus may also be spread when an infected person sneezes, coughs or exhales, and people around them breathe in these micro-droplets. For this reason, it’s important to stay around one meter (3 feet) away from someone you know to have the virus.</p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid  pt-5 pb-5" id="sympid">
+	<div class="section_header text-center mb-5 mt-4">
+		<h1>Corona Symptoms</h1>	
+	</div>
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-12 mt-5">
+			<figure class="text-center">
+				<img src="images/cough.png" class="image-fluid" width="120" height="120">
+				<figcaption>Cough</figcaption>
+			</figure>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12 mt-5">
+			<figure class="text-center">
+				<img src="images/cold.png" class="image-fluid" width="120" height="120">
+				<figcaption>Cold</figcaption>
+			</figure>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12 mt-5">
+			<figure class="text-center">
+				<img src="images/fever.png" class="image-fluid" width="120" height="120">
+				<figcaption>Fever</figcaption>
+			</figure>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12 mt-5">
+			<figure class="text-center">
+				<img src="images/tiredness.png" class="image-fluid" width="120" height="120">
+				<figcaption>Tiredness</figcaption>
+			</figure>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12 mt-5">
+			<figure class="text-center">
+				<img src="images/nose.png" class="image-fluid" width="120" height="120">
+				<figcaption>Runny Nose</figcaption>
+			</figure>
+		</div>
+		<div class="col-lg-4 col-md-4 col-12 mt-5">
+			<figure class="text-center">
+				<img src="images/breath.png" class="image-fluid" width="120" height="120">
+				<figcaption>Difficulty in Breathing</figcaption>
+			</figure>
+		</div>
+	</div>
+</div>
+<!-------------------prevention----------->
+<div class="container-fluid sub_section pt-5 pb-5" id="preventionid">
+	<div class="section_header text-center mb-5 mt-4">
+		<h1>6 Steps Prevention Against Corona</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-12 mt-5">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12">
+						<figure class="text-center">
+							<img src="images/handwash.png" class="image-fluid" width="90" height="90">
+						</figure>
+					</div>
+					<div class="col-lg-8 col-md-8 col-12 text-capitalize">
+						<p>Wash your hand for 20 sec and senitize from alcohol based senitizer</p>  
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-12 mt-5">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12">
+						<figure class="text-center">
+							<img src="images/mask.png" class="image-fluid" width="90" height="90">
+						</figure>
+					</div>
+					<div class="col-lg-8 col-md-8 col-12 text-capitalize">
+						<p>Cover your nose and mouth eith disposable tissue or flxed elbow when you cough or sneeze</p>  
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-12 mt-5">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12">
+						<figure class="text-center">
+							<img src="images/dist.webp" class="image-fluid" width="90" height="90">
+						</figure>
+					</div>
+					<div class="col-lg-8 col-md-8 col-12 text-capitalize">
+						<p>Avoid close contact with people who are unwell</p>  
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-12 mt-5">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12">
+						<figure class="text-center">
+							<img src="images/home.png" class="image-fluid" width="90" height="90">
+						</figure>
+					</div>
+					<div class="col-lg-8 col-md-8 col-12 text-capitalize">
+						<p>stay home and self isolate from others</p>  
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-12 mt-5">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12">
+						<figure class="text-center">
+							<img src="images/news.webp" class="image-fluid" width="90" height="90">
+						</figure>
+					</div>
+					<div class="col-lg-8 col-md-8 col-12 text-capitalize">
+						<p>stay informed by watching news & follow the recommended practices</p>  
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-12 mt-5">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12">
+						<figure class="text-center">
+							<img src="images/doctor.png" class="image-fluid" width="90" height="90">
+						</figure>
+					</div>
+					<div class="col-lg-8 col-md-8 col-12 text-capitalize">
+						<p>if you have fever,cough,difficulty in breathing seek medical care early</p>  
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<!-------------------Contactus----------->
+<div class="container-fluid  pt-5 pb-5" id="contactid">
+	<div class="section_header text-center mb-5 mt-4">
+		<h1>Contact Us</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 offset-lg-2 col-12">
+				<form action="" method="POST">
+					<div class="form-group">
+				    <label >User Name</label>
+				    <input type="text" class="form-control" name="username" placeholder="name" autocomplete="off" required>
+				  </div>
+
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">Email</label>
+				    <input type="email" class="form-control" name="email" placeholder="name@example.com" required autocomplete="off">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">Mobile</label>
+				    <input type="text" class="form-control" name="mobile" placeholder="mobile" required autocomplete="off">
+				  </div>
+				  <div class="form-group">
+				  	<label>Select Symptoms</label>
+				  	<div>
+				  	<div class="custom-control custom-checkbox custom-control-inline text-capitalize ">
+				  		<input type="checkbox" class="custom-control-input" id="customcheckbox1" name="coronasym[]" value="cold">
+				  		<label class="custom-control-label" for="customcheckbox1">Cold</label>
+				  	</div>
+				  	<div class="custom-control custom-checkbox custom-control-inline text-capitalize ">
+				  		<input type="checkbox" class="custom-control-input" id="customcheckbox4" name="coronasym[]" value="tired">
+				  		<label class="custom-control-label" for="customcheckbox4">Feeling Weak</label>
+				  	</div>
+				  	<div class="custom-control custom-checkbox custom-control-inline text-capitalize ">
+				  		<input type="checkbox" class="custom-control-input" id="customcheckbox2" name="coronasym[]" value="fever">
+				  		<label class="custom-control-label" for="customcheckbox2">Fever</label>
+				  	</div>
+				  	<div class="custom-control custom-checkbox custom-control-inline text-capitalize ">
+				  		<input type="checkbox" class="custom-control-input" id="customcheckbox3" name="coronasym[]" value="breath">
+				  		<label class="custom-control-label" for="customcheckbox3">Difficulty in Breath</label>
+				  	</div>
+				    </div>
+				  </div>
+				  
+				  <div class="form-group">
+				    <label >Example textarea</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+				  </div>
+				  <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-------------------------footer-------------->
+	<footer class="mt-5">
+		<div class="footer_style text-white text-center container-fluid">
+			<p>Copyright by Vibhore</p>
+		</div>
+
+	</footer>
+
+</body>
+
+
+
+
+</html>
+<?php
+include 'dbcon.php';
+	if(isset($_POST['submit'])){
+		$username = $_POST['username'];
+		$email = $_POST['email'];
+		$mobile = $_POST['mobile'];
+		$symp = $_POST['coronasym'];
+		$msg = $_POST['message'];
+		$chk="";
+		foreach ($symp as $chk1) {
+			$chk .= $chk1.",";
+		}
+		$insertquery="insert into coronacase(username,email,mobile,symp,message) values('$username','$email','$mobile','$chk','$msg') ";
+		$query = mysqli_query($con,$insertquery);
+	}
+
+
+?>
